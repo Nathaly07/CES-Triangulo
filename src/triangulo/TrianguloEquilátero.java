@@ -9,9 +9,21 @@ package triangulo;
  * @author LabP3E003
  */
 public class TrianguloEquilátero extends Triangulo{
-    
-    public TrianguloEquilátero(double lado1, double lado2, double lado3) {
-        super(lado1, lado2, lado3);
+    private double lado;
+
+    public TrianguloEquilátero(double lado) {
+        super(lado, lado, lado);
+        this.lado = lado;
     }
-    
+
+    @Override
+    public String determinarTipo() {
+        return "Equilátero";
+    }
+
+    @Override
+    public double calcularArea() {
+        return (Math.sqrt(3)/4)*lado*lado;
+    }
+
 }

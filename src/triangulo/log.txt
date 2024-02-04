@@ -1,0 +1,72 @@
+feb 04, 2024 7:51:20 A. M. triangulo.Main obtenerDouble
+SEVERE: Excepción al obtener un valor double
+java.lang.NumberFormatException: For input string: "y"
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:792)
+	at triangulo.Main.obtenerDouble(Main.java:74)
+	at triangulo.Main.main(Main.java:45)
+
+feb 04, 2024 7:56:38 A. M. triangulo.Main obtenerDouble
+SEVERE: Excepción al obtener un valor double
+java.lang.NumberFormatException: For input string: "y"
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:792)
+	at triangulo.Main.obtenerDouble(Main.java:79)
+	at triangulo.Main.main(Main.java:50)
+
+feb 04, 2024 7:58:28 A. M. triangulo.Main obtenerDouble
+SEVERE: Excepción al obtener un valor double
+java.lang.NumberFormatException: For input string: "y"
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:792)
+	at triangulo.Main.obtenerDouble(Main.java:81)
+	at triangulo.Main.main(Main.java:52)
+
+feb 04, 2024 7:59:26 A. M. triangulo.Main obtenerDouble
+SEVERE: Excepción al obtener un valor double
+java.lang.NumberFormatException: For input string: "y"
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:792)
+	at triangulo.Main.obtenerDouble(Main.java:75)
+	at triangulo.Main.main(Main.java:46)
+
+feb 04, 2024 8:00:31 A. M. triangulo.Main main
+SEVERE: Excepción al crear el triángulo
+excepciones.TrianguloInvalidoException: Error: Los lados ingresados no forman un triángulo válido.
+	at triangulo.Triangulo.validarTriangulo(Triangulo.java:69)
+	at triangulo.Triangulo.<init>(Triangulo.java:25)
+	at triangulo.TrianguloIsósceles.<init>(TrianguloIsósceles.java:18)
+	at triangulo.Triangulo.crearTriangulo(Triangulo.java:36)
+	at triangulo.Main.main(Main.java:50)
+
+feb 04, 2024 8:00:50 A. M. triangulo.Main main
+SEVERE: Excepción al crear el triángulo
+excepciones.TrianguloInvalidoException: Error: Los lados ingresados no forman un triángulo válido.
+	at triangulo.Triangulo.validarTriangulo(Triangulo.java:69)
+	at triangulo.Triangulo.<init>(Triangulo.java:25)
+	at triangulo.TrianguloEscaleno.<init>(TrianguloEscaleno.java:18)
+	at triangulo.Triangulo.crearTriangulo(Triangulo.java:38)
+	at triangulo.Main.main(Main.java:50)
+
+feb 04, 2024 8:02:16 A. M. triangulo.Main main
+SEVERE: Excepción al crear el triángulo
+excepciones.LadosNoPositivosException: Error: Los lados deben tener longitudes positivas.
+	at triangulo.Triangulo.validarLadosPositivos(Triangulo.java:76)
+	at triangulo.Triangulo.<init>(Triangulo.java:25)
+	at triangulo.TrianguloIsósceles.<init>(TrianguloIsósceles.java:18)
+	at triangulo.Triangulo.crearTriangulo(Triangulo.java:37)
+	at triangulo.Main.main(Main.java:50)
+
+feb 04, 2024 8:02:27 A. M. triangulo.Main main
+SEVERE: Excepción al crear el triángulo
+excepciones.LadosNoPositivosException: Error: Los lados deben tener longitudes positivas.
+	at triangulo.Triangulo.validarLadosPositivos(Triangulo.java:76)
+	at triangulo.Triangulo.<init>(Triangulo.java:25)
+	at triangulo.TrianguloEscaleno.<init>(TrianguloEscaleno.java:18)
+	at triangulo.Triangulo.crearTriangulo(Triangulo.java:39)
+	at triangulo.Main.main(Main.java:50)
+

@@ -4,14 +4,30 @@
  */
 package triangulo;
 
+import excepciones.EntradaNoNumericaException;
+import excepciones.LadosNoPositivosException;
+import excepciones.TrianguloInvalidoException;
+
 /**
  *
  * @author LabP3E003
  */
 public class TrianguloEquilátero extends Triangulo{
-    
-    public TrianguloEquilátero(double lado1, double lado2, double lado3) {
-        super(lado1, lado2, lado3);
+    private double lado;
+
+    public TrianguloEquilátero(double lado) throws LadosNoPositivosException, TrianguloInvalidoException, EntradaNoNumericaException {
+        super(lado, lado, lado);
+        this.lado = lado;
     }
-    
+
+    @Override
+    public String clasificarTipo() {
+        return "Además, el triángulo es Equilátero.";
+    }
+
+    @Override
+    public double calcularArea() {
+        return (Math.sqrt(3)/4)*lado*lado;
+    }
+
 }

@@ -4,6 +4,10 @@
  */
 package triangulo;
 
+import excepciones.EntradaNoNumericaException;
+import excepciones.LadosNoPositivosException;
+import excepciones.TrianguloInvalidoException;
+
 /**
  *
  * @author LabP3E003
@@ -11,7 +15,7 @@ package triangulo;
 public class TrianguloEquilátero extends Triangulo{
     private double lado;
 
-    public TrianguloEquilátero(double lado) {
+    public TrianguloEquilátero(double lado) throws LadosNoPositivosException, TrianguloInvalidoException, EntradaNoNumericaException {
         super(lado, lado, lado);
         this.lado = lado;
     }

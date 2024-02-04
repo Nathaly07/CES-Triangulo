@@ -15,8 +15,8 @@ public class TrianguloIsósceles extends Triangulo{
     }
 
     @Override
-    public String determinarTipo() {
-        return "Isósceles";
+    public String clasificarTipo() {
+        return "Además, el triángulo es Isóoseles.";
     }
 }
 

@@ -4,13 +4,17 @@
  */
 package triangulo;
 
+import excepciones.EntradaNoNumericaException;
+import excepciones.LadosNoPositivosException;
+import excepciones.TrianguloInvalidoException;
+
 /**
  *
  * @author LabP3E003
  */
 public class TrianguloIsósceles extends Triangulo{
 
-    public TrianguloIsósceles(double lado1, double lado2) {
+    public TrianguloIsósceles(double lado1, double lado2) throws LadosNoPositivosException, TrianguloInvalidoException, EntradaNoNumericaException {
         super(lado1, lado2, lado2);
     }
 

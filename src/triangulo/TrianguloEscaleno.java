@@ -15,8 +15,8 @@ public class TrianguloEscaleno extends Triangulo{
     }
 
     @Override
-    public String determinarTipo() {
-        return "Escaleno";
+    public String clasificarTipo() {
+        return "Además, el triángulo es Escaleno.";
     }
 
 }

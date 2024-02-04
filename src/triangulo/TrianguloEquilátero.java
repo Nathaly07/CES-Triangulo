@@ -17,8 +17,8 @@ public class TrianguloEquilátero extends Triangulo{
     }
 
     @Override
-    public String determinarTipo() {
-        return "Equilátero";
+    public String clasificarTipo() {
+        return "Además, el triángulo es Equilátero.";
     }
 
     @Override

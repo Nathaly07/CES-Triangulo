@@ -131,6 +131,17 @@ public class TrianguloTest {
     }
 
     @Test
+    public void testValidarTriangulo(){
+        double lado1 = 3;
+        double lado2 = 4;
+        double lado3 = 7;
+
+        String resultadoEsperado ="Error: Los lados ingresados no forman un triángulo válido.";
+        TrianguloInvalidoException validarTriangulo=  assertThrows(TrianguloInvalidoException.class, () -> new Triangulo(lado1,lado2,lado3));
+        assertEquals(resultadoEsperado,validarTriangulo.getMessage());
+    }
+
+    @Test
     public void testCrearUnTrianguloEquilatero() throws LadosNoPositivosException, TrianguloInvalidoException, EntradaNoNumericaException {
         double lado = 8;
         Triangulo triangulo= Triangulo.crearTriangulo(lado, lado, lado);
@@ -162,21 +173,19 @@ public class TrianguloTest {
 
     @Test
     public void testCrearTrianguloIsósceles() throws LadosNoPositivosException, TrianguloInvalidoException, EntradaNoNumericaException {
-        double lado1 = 9;
-        double lado2 = 9;
-        double lado3 = 12;
+        double lado1 = 10;
+        double lado2 = 7;
 
-        Triangulo triangulo= Triangulo.crearTriangulo(lado1, lado2, lado3);
+        Triangulo triangulo= Triangulo.crearTriangulo(lado1, lado2, lado2);
 
         //Calcular el area:
-        double s = (lado1 + lado2 + lado3) / 2;
-        double areaEsperada = 40.311;
+        double areaEsperada = 24.49489742783178;
         assertEquals(areaEsperada, triangulo.calcularArea(), 0);
 
         //Determinar tipo
         String tipoEsperado = "Además, el triángulo es Isósceles.";;
         assertEquals(tipoEsperado, triangulo.clasificarTipo());
-
     }
+
 
 }

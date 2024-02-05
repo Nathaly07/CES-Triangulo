@@ -171,12 +171,14 @@ public class TrianguloTest {
         assertEquals(tipoEsperado, triangulo.clasificarTipo());
     }
 
+    //Las pruebas unitarias a continuacion muestra los diferentes ordenes de ingresar datos para el triangulo Isosceles
     @Test
-    public void testCrearTrianguloIsósceles() throws LadosNoPositivosException, TrianguloInvalidoException, EntradaNoNumericaException {
+    public void testCrearTrianguloIsósceles1() throws LadosNoPositivosException, TrianguloInvalidoException, EntradaNoNumericaException {
         double lado1 = 10;
         double lado2 = 7;
+        double lado3 = 7;
 
-        Triangulo triangulo= Triangulo.crearTriangulo(lado1, lado2, lado2);
+        Triangulo triangulo= Triangulo.crearTriangulo(lado1, lado2, lado3);
 
         //Calcular el area:
         double areaEsperada = 24.49489742783178;
@@ -187,5 +189,38 @@ public class TrianguloTest {
         assertEquals(tipoEsperado, triangulo.clasificarTipo());
     }
 
+    @Test
+    public void testCrearTrianguloIsósceles2() throws LadosNoPositivosException, TrianguloInvalidoException, EntradaNoNumericaException {
+        double lado1 = 12;
+        double lado2 = 12;
+        double lado3 = 15;
+
+        Triangulo triangulo= Triangulo.crearTriangulo(lado1, lado2, lado3);
+
+        //Calcular el area:
+        double areaEsperada = 70.25622748198198;
+        assertEquals(areaEsperada, triangulo.calcularArea(), 0);
+
+        //Determinar tipo
+        String tipoEsperado = "Además, el triángulo es Isósceles.";;
+        assertEquals(tipoEsperado, triangulo.clasificarTipo());
+    }
+
+    @Test
+    public void testCrearTrianguloIsósceles3() throws LadosNoPositivosException, TrianguloInvalidoException, EntradaNoNumericaException {
+        double lado1 = 6;
+        double lado2 = 9;
+        double lado3 = 6;
+
+        Triangulo triangulo= Triangulo.crearTriangulo(lado1, lado2, lado3);
+
+        //Calcular el area:
+        double areaEsperada = 17.858821349685986;
+        assertEquals(areaEsperada, triangulo.calcularArea(), 0);
+
+        //Determinar tipo
+        String tipoEsperado = "Además, el triángulo es Isósceles.";;
+        assertEquals(tipoEsperado, triangulo.clasificarTipo());
+    }
 
 }

@@ -14,8 +14,8 @@ import excepciones.TrianguloInvalidoException;
  */
 public class TrianguloIsósceles extends Triangulo{
 
-    public TrianguloIsósceles(double lado1, double lado2) throws LadosNoPositivosException, TrianguloInvalidoException, EntradaNoNumericaException {
-        super(lado1, lado2, lado2);
+    public TrianguloIsósceles(double lado1, double lado2, double lado3) throws LadosNoPositivosException, TrianguloInvalidoException, EntradaNoNumericaException {
+        super(lado1, lado2, lado3);
     }
 
     @Override

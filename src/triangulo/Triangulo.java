@@ -34,7 +34,7 @@ class Triangulo {
         if (lado1 == lado2 && lado2 == lado3) {
             return new TrianguloEquilátero(lado1);
         } else if (lado1 == lado2 || lado1 == lado3 || lado2 == lado3) {
-            return new TrianguloIsósceles(lado1, lado2);
+            return new TrianguloIsósceles(lado1, lado2, lado3);
         } else {
             return new TrianguloEscaleno(lado1, lado2, lado3);
         }

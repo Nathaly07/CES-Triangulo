@@ -15,19 +15,6 @@ public class TrianguloTest {
     public void tearDown() throws Exception {
     }
 
-    @org.junit.Test
-    public void crearTriangulo() {
-
-    }
-
-    @org.junit.Test
-    public void calcularArea() {
-    }
-
-    @org.junit.Test
-    public void clasificarTipo() {
-    }
-
     @Test
     public void testValidarEntradaNumericaNegativa(){
         //Cuando todos sus lados son negativos
